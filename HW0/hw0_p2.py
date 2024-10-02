@@ -89,7 +89,7 @@ for key ,value in collab.items(): #和導演合作的演員有可能重複，但
 		break
 compare_list = change(collab)
 top3collab = []
-for i in range(3):
+for i in range(4):#第三名與第四名同分
 	top3collab += [compare_list[i][1]]
 print("the answer of Q4:", ", ".join(top3collab))
 
@@ -122,7 +122,7 @@ for key ,value in pairs.items():#類型可能會重複，但題目要的是不�
 		break
 compare_list = change(pairs)
 top6actors = []
-for i in range(2):
+for i in range(6): #第二名至第六名同分
 	top6actors += [compare_list[i][1]]
 print("the answer of Q5:", ", ".join(top6actors))
 
@@ -144,7 +144,6 @@ for key ,value in pairs.items():
 	gap = tempt[len(tempt)-1] - tempt [0]
 	pairs[key] =gap
 compare_list = change(pairs)
-print(compare_list,'a')
 ans9 = []
 for i in range(len(compare_list)):
 	if compare_list[i][0] == 10:
